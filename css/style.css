@@ -1,0 +1,27 @@
+.navbar-default {
+    background-color: #ffffff;
+    border-color: #ffffff;
+}
+
+.navbar ul a {
+    color: #031b4e;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #031b4e;
+}
+
+.navbar-brand img {
+    width: 170px;
+    transform: translateY(-55px);
+    margin-right: 85px;
+}
+
+.nav button {
+    transform: translateY(10px);
+    border-color: #0069ff;
+    color: #0069ff;
+    font-weight: bold;
+}
