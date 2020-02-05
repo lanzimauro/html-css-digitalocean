@@ -1,98 +1,458 @@
-.clearfix {
-   content: '';
-   display: table;
-   clear: both;
+body {
+  font-family: Roboto,sans-serif;
+  padding-top: 70px;
 }
 
-.navbar-default {
-    background-color: #ffffff;
-    border-color: #ffffff;
+/* HEADER */
+.header_top {
+    z-index: 999;
+  position: fixed;
+  top: 0;
+  background-color: #ffffff;
+  width: 100%;
+  height: 70px;
+  border: 1px solid #f6f7f9;
+  color: black;
+  line-height: 70px;
+  font-size: 16px;
+  text-align: center;
 }
 
-.navbar ul a {
-    color: #031b4e;
-    font-size: 15px;
-    font-weight: bold;
+.header_top img {
+  width: 170px;
+  vertical-align: middle;
 }
 
-.navbar-default .navbar-nav > li > a {
-    color: #031b4e;
+.header_top a {
+  color: #031b4e;
+  text-decoration: none;
+  cursor: pointer;
 }
 
-.navbar-brand img {
-    width: 170px;
-    transform: translateY(-55px);
-    margin-right: 85px;
+.header_top a:hover {
+  color: #0069FF;
 }
 
-.nav button {
-    transform: translateY(10px);
-    border-color: #0069ff;
-    color: #0069ff;
-    font-weight: bold;
+.list-inline .btn-default {
+  border: 1px solid #0069FF;
+  color: #0069FF;
+  border-radius: 5px;
 }
 
-/* FINE NAVBAR */
-
-.fascia--blu {
-    background-image: url(https://www.digitalocean.com/assets/media/homepage/bg-home-1-d54581d7.jpg);
-    background-size: cover;
+.list-inline .btn-default:hover {
+  background-color: #0069FF;
+  border: 1px solid #0069FF;
+  color: white;
 }
 
-h1 {
+.glyphicon-menu-down {
+  font-size: 12px;
+}
+
+.glyphicon-menu-hamburger {
+  color: #3a8aff;
+  font-size: 24px;
+  vertical-align: middle;
+}
+
+.glyphicon-menu-hamburger:hover {
+  color: #0069FF;
+}
+
+/* CONTENUTO HEADER */
+.header_jumbotron {
+  background-image: url(https://www.digitalocean.com/assets/media/homepage/bg-home-1-d54581d7.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: blue;
+  width: auto;
+  color: white;
+}
+
+.text_jumbotron {
+  text-align: left;
+  margin-top: 115px;
+  margin-bottom: 115px;
+}
+
+.text_jumbotron h1 {
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.text_jumbotron h3 {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.form_container {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  background-color: white;
+  text-align: center;
+  border-radius: 5px;
+  padding: 32px;
+}
+
+.form_container h2 {
+  margin-top: 5px;
+  color: #031B4E;
+  text-align: center;
+}
+
+.text_blue {
+  color: #0069FF;
+}
+
+.btn_account {
+  width: 100%;
+  background-color: #0069FF;
+  color: white;
+  border: 1px solid #0069FF;
+  border-radius: 5px;
+  margin: 11px 0;
+}
+
+.btn_account:hover {
+  background-color: #0069FF;
+  color: white;
+  opacity: 0.8;
+}
+
+.btn_google {
+  width: 100%;
+  color: #031b4e;
+  font-weight: bold;
+  border: 1px solid white;
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.1);
+  margin-bottom: 13px;
+}
+
+.text_black{
+  color: #031b4e;
+}
+
+.text_black a {
+  text-decoration: underline;
+}
+
+/* MEDIA QUERY  CONTENUTO HEADER */
+@media screen and (max-width: 1200px) {
+  .text_jumbotron h1{
+    font-size: 32px;
+  }
+  .text_jumbotron h3{
+    font-size: 19px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  {
+    font-size: 40px;
+  }
+}
+
+/* ROW MAIN TOP */
+.row_top_main {
+  background-color: #F3F5F9;
+  padding: 64px 0;
+}
+
+.row_top_main h2 {
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.b_align {
+  vertical-align: middle;
+  height: 160px;
+  line-height: 160px;
+}
+
+.b_logo {
+  width: 100%;
+}
+
+.row_top_main a {
+  font-size: 16px;
+}
+
+/* INFORMATION DIGITALOCEAN */
+.information_digitalocean {
+  padding: 120px 0;
+}
+
+.information_digitalocean h2 {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.information_digitalocean h3 {
+  font-size: 20px;
+  color: #818DA7;
+  margin-bottom: 65px;
+}
+
+.information_digitalocean h4 {
+  font-size: 18px;
+  color: #031b4e;
+  font-weight: bold;
+}
+
+.information_digitalocean p {
+  font-size: 16px;
+  color: #818DA7;
+}
+
+.information_digitalocean .i_box {
+  padding: 16px 0 0 16px;
+  margin-bottom: 32px;
+}
+
+.padding_tabs {
+  padding: 32px;
+}
+
+.tabs {
+  display: block;
+  padding: 17px;
+  border-left: 2px solid #e5e8ed;
+  font-size: 16px;
+  color: #818DA7;
+}
+
+.tabs:hover {
+  color: #031b4e;
+  text-decoration: none;
+}
+
+.border_blue {
+border-left: 2px solid #0069FF;
+color: #0069FF;
+}
+
+/* <!-- SLIDE 1 --> */
+.slide1 {
+  background-color: #F3F5F9;
+  width: auto;
+  padding: 64px 0;
+}
+
+.slide1 h2 {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.slide1 h3 {
+  font-size: 20px;
+  color: #818DA7;
+  margin-bottom: 65px;
+}
+
+.img_slide {
+  width: 100%;
+  cursor: grab;
+}
+
+.slide1 h4 {
+  font-size: 25px;
+  color: #031b4e;
+  margin-top: 30px;
+  cursor: grab;
+}
+
+.glyphicon-chevron-left {
+  padding-top: calc(613.3px / 2);
+  color: #818DA7;
+  font-size: 40px;
+}
+
+.glyphicon-chevron-right {
+  padding-top: calc(613.3px / 2);
+  color: #818DA7;
+  font-size: 40px;
+}
+
+.glyphicon-chevron-left:hover {
+  color: #031c4e;
+  cursor: pointer;
+}
+
+.glyphicon-chevron-right:hover {
+  color: #031c4e;
+  cursor: pointer;
+}
+
+
+.slide1 ol {
+  list-style: none;
+  margin-top: 15px;
+}
+
+.slide1 li {
+  display: inline-block;
+  background-color: transparent;
+  border: 2px solid #0069FF;
+  width: 15px;
+  height: 15px;
+  margin: 0 2px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slide1 li:hover {
+  background-color: #0069FF;
+  opacity: 1;
+}
+
+/* MEDIA QUERY SLIDE 1 */
+@media screen and (max-width: 1200px) {
+  .glyphicon-chevron-left,
+  .glyphicon-chevron-right{
+    padding-top: calc(505.13px / 2);
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .glyphicon-chevron-left,
+  .glyphicon-chevron-right{
+    padding-top: calc(386.14px / 2);
+  }
+  .slide1 ol{
+    padding-inline-start: 0;
+    margin-top: 65px;
+  }
+}
+
+/* FEATURES INTERPRISE */
+.features_enterprise {
+  padding: 60px;
+}
+
+.features_enterprise h2 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 65px;
+}
+
+.features_enterprise a {
+  font-size: 16px;
+}
+
+.features_enterprise h4 {
+  font-size: 18px;
+  color: #031b4e;
+  font-weight: bold;
+}
+
+.features_enterprise p {
+  font-size: 16px;
+  color: #818DA7;
+}
+
+/* tabella blu */
+.tabella_blu{
+  background: #144dd9;
+  padding: 120px 0;
+}
+
+.tabella_blu h2{
+  color: white;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.testo_tabella{
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.6);
+  padding: 32px 0 0 32px;
+}
+
+.text_white{
+  color: white;
+}
+
+.tabella_blu a{
+  color: #00d7d2;
+}
+
+.tabella_blu a:hover{
+  color: #0069FF;
+  text-decoration: none;
+}
+
+.tabella_blu hr{
+  margin: 3px 0 15px 0;
+  background-color: white;
+}
+
+.tabella_blu p,
+.tabella_blu a{
+  padding: 0 15px;
+}
+
+/* SLIDE 2 */
+.inferiore h2{
+  margin-bottom: 65px;
+}
+
+.inferiore .col-sm-10{
+  background-color: #fff;
+  border: 1px solid #e5e8ed;
+  border-radius: 5px;
+  padding: 120px 0;
+}
+
+.inferiore img{
+  width: 30%;
+  margin-bottom: 32px;
+}
+
+.inferiore p{
+  font-size: 36px;
+  color: #818DA7;
+}
+
+.inferiore h4{
+  font-weight: bold;
+}
+
+.inferiore h5{
+  font-size: 24px;
+  margin-bottom: 50px;
+  color: #818DA7;
+}
+
+.inferiore a{
+  font-size: 24px;
+}
+
+.inferiore a:hover{
+  text-decoration: none;
+}
+
+.inferiore ol{
+  padding-inline-start: 0;
+}
+
+.fascia_blu_fine {
+    background-color: #144dd9;
+    padding: 50px;
+}
+
+.fascia_blu_fine h1 {
     color: #ffffff;
     font-weight: bold;
-    font-size: 55px;
-    padding-left: 80px;
-    padding-top: 50px;
 }
 
-.welcome {
-    float: left;
-    padding-right: 150px;
-}
-
-.welcome p {
-    color: #ffffff;
-    padding-left: 80px;
-}
-
-.banner {
-    float: left;
-    padding-left: 60px;
-}
-.banner form {
-    width: 450px;
-    background-color: #ffffff;
-    padding: 28px;
-    margin: 25px;
-    border-radius: 2%;
-}
-
-form .testo--banner {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.testo--banner h2 {
-    color: #031b4e;
+.btn_account_white {
+    color: #2485fd;
     font-weight: bold;
-    font-size: 25px;
-}
-
-.testo--banner h3 {
-    color: #0069ff;
-    font-weight: bold;
-    font-size: 25px;
-    margin-top: 5px;
-}
-
-form button.btn {
-    width: 100%;
-    padding: 6px 12px;
-    font-size: 14px;
-    line-height: 1.42857143;
-    color: #555;
-    background-color: #fff;
-    margin-bottom: 15px;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin-bottom: 13px;
+    margin-top: 20px;
 }
